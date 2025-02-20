@@ -25,10 +25,21 @@ class Module6Tests(unittest.TestCase):
         self.assertListEqual([], output_arr)
         
     def test_only_even_numbers_best(self):
-        assert False
+        test_arr = [1, 2, 3, 4, 5, 6]
+        expected_arr = [2, 4, 6]
+        output_arr = only_even_numbers(test_arr)
+
+        self.assertListEqual(expected_arr, output_arr)
 
     def test_only_even_numbers_average(self):
-        assert False
+        test_arr = [20, 40, 41, 100, 1001]
+        expected_arr = [20, 40, 100]
+        output_arr = only_even_numbers(test_arr)
+
+        self.assertListEqual(expected_arr, output_arr)
 
     def test_only_even_numbers_worst(self):
-        assert False
+        test_arr = "apple"
+        output_arr = only_even_numbers(test_arr)
+
+        self.assertListEqual([], output_arr)
